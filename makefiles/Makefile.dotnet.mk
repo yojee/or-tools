@@ -90,7 +90,7 @@ $(GEN_DIR)/ortools/linear_solver/linear_solver_csharp_wrap.cc: \
  -namespace $(OR_TOOLS_ASSEMBLY_NAME).LinearSolver \
  -dllimport "$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).$(SWIG_DOTNET_LIB_SUFFIX)" \
  -outdir $(GEN_PATH)$Sortools$Slinear_solver \
- $(SRC_DIR)$Sortools$Slinear_solver$Scsharp$Slinear_solver.i
+ $(SRC_DIR)$Sortools$Slinear_solver$Sdotnet$Slinear_solver.i
 
 $(OBJ_DIR)/swig/linear_solver_csharp_wrap.$O: \
  $(GEN_DIR)/ortools/linear_solver/linear_solver_csharp_wrap.cc \
@@ -113,7 +113,7 @@ $(GEN_DIR)/ortools/constraint_solver/constraint_solver_csharp_wrap.cc: \
  -namespace $(OR_TOOLS_ASSEMBLY_NAME).ConstraintSolver \
  -dllimport "$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).$(SWIG_DOTNET_LIB_SUFFIX)" \
  -outdir $(GEN_PATH)$Sortools$Sconstraint_solver \
- $(SRC_DIR)$Sortools$Sconstraint_solver$Scsharp$Srouting.i
+ $(SRC_DIR)$Sortools$Sconstraint_solver$Sdotnet$Srouting.i
 	$(SED) -i -e 's/CSharp_new_Solver/CSharp_new_CpSolver/g' \
  $(GEN_PATH)$Sortools$Sconstraint_solver$S*cs \
  $(GEN_PATH)$Sortools$Sconstraint_solver$Sconstraint_solver_csharp_wrap.*
@@ -152,7 +152,7 @@ $(GEN_DIR)/ortools/algorithms/knapsack_solver_csharp_wrap.cc: \
  -namespace $(OR_TOOLS_ASSEMBLY_NAME).Algorithms \
  -dllimport "$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).$(SWIG_DOTNET_LIB_SUFFIX)" \
  -outdir $(GEN_PATH)$Sortools$Salgorithms \
- $(SRC_DIR)$Sortools$Salgorithms$Scsharp$Sknapsack_solver.i
+ $(SRC_DIR)$Sortools$Salgorithms$Sdotnet$Sknapsack_solver.i
 
 $(OBJ_DIR)/swig/knapsack_solver_csharp_wrap.$O: \
  $(GEN_DIR)/ortools/algorithms/knapsack_solver_csharp_wrap.cc \
@@ -173,7 +173,7 @@ $(GEN_DIR)/ortools/graph/graph_csharp_wrap.cc: \
  -namespace $(OR_TOOLS_ASSEMBLY_NAME).Graph \
  -dllimport "$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).$(SWIG_DOTNET_LIB_SUFFIX)" \
  -outdir $(GEN_PATH)$Sortools$Sgraph \
- $(SRC_DIR)$Sortools$Sgraph$Scsharp$Sgraph.i
+ $(SRC_DIR)$Sortools$Sgraph$Sdotnet$Sgraph.i
 
 $(OBJ_DIR)/swig/graph_csharp_wrap.$O: \
  $(GEN_DIR)/ortools/graph/graph_csharp_wrap.cc \
@@ -195,7 +195,7 @@ $(GEN_DIR)/ortools/sat/sat_csharp_wrap.cc: \
  -namespace $(OR_TOOLS_ASSEMBLY_NAME).Sat \
  -dllimport "$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).$(SWIG_DOTNET_LIB_SUFFIX)" \
  -outdir $(GEN_PATH)$Sortools$Ssat \
- $(SRC_DIR)$Sortools$Ssat$Scsharp$Ssat.i
+ $(SRC_DIR)$Sortools$Ssat$Sdotnet$Ssat.i
 
 $(OBJ_DIR)/swig/sat_csharp_wrap.$O: \
  $(GEN_DIR)/ortools/sat/sat_csharp_wrap.cc \
