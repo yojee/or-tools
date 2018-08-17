@@ -409,13 +409,9 @@ clean_dotnet:
 	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_ASSEMBLY_NAME)$S$(OR_TOOLS_ASSEMBLY_NAME).csproj
 	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_ASSEMBLY_NAME)$Sbin
 	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_ASSEMBLY_NAME)$Sobj
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_TEST_DLL_NAME)$Sbin
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_TEST_DLL_NAME)$Sobj
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_FSHARP_DLL_NAME)$S$(ORTOOLS_FSHARP_DLL_NAME).fsproj
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_FSHARP_DLL_NAME)$Sbin
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_FSHARP_DLL_NAME)$Sobj
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_FSHARP_TEST_DLL_NAME)$Sbin
-	-$(DELREC) ortools$Sdotnet$S$(ORTOOLS_FSHARP_TEST_DLL_NAME)$Sobj
+	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_FSHARP_ASSEMBLY_NAME)$S$(OR_TOOLS_FSHARP_ASSEMBLY_NAME).csproj
+	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_FSHARP_ASSEMBLY_NAME)$Sbin
+	-$(DELREC) ortools$Sdotnet$S$(OR_TOOLS_FSHARP_ASSEMBLY_NAME)$Sobj
 	-$(DELREC) ortools$Sdotnet$Spackages
 	-$(DELREC) $(EX_PATH)$Sdotnet$Scsharp$Sbin
 	-$(DELREC) $(EX_PATH)$Sdotnet$Scsharp$Sobj
@@ -431,11 +427,10 @@ clean_dotnet:
 	-$(DEL) $(GEN_PATH)$Sortools$Ssat$S*.cs
 	-$(DEL) $(GEN_PATH)$Sortools$Ssat$S*csharp_wrap*
 	-$(DEL) $(OBJ_DIR)$Sswig$S*_csharp_wrap.$O
-	-$(DEL) $(BIN_DIR)$S$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).*
 	-$(DEL) $(BIN_DIR)$S$(PROTOBUF_ASSEMBLY_NAME).*
+	-$(DEL) $(BIN_DIR)$S$(OR_TOOLS_NATIVE_ASSEMBLY_NAME).*
 	-$(DEL) $(BIN_DIR)$S$(OR_TOOLS_ASSEMBLY_NAME).*
 	-$(DEL) $(BIN_DIR)$S$(OR_TOOLS_FSHARP_ASSEMBLY_NAME).*
-	-$(DEL) $(SRC_DIR)/ortools/dotnet/$(ORTOOLS_NUSPEC_FILE)
 	-$(DELREC) $(TEMP_DOTNET_DIR)
 	-$(DELREC) $(TEMP_DOTNET_TEST_DIR)
 
